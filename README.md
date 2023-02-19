@@ -137,13 +137,7 @@ In the following table, the value in `()` indicates the result of the project, a
 python3 ./inference.py
 ```
 
-Input: 
 
-<span align="center"><img width="492" height="480" src="figure/baboon_lr.png"/></span>
-
-Output: 
-
-<span align="center"><img width="492" height="480" src="figure/baboon_sr.png"/></span>
 
 ```text
 Build `rrdbnet_x4` model successfully.
