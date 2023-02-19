@@ -76,14 +76,14 @@ def train_fn(
 
 
 def main():
-    dataset = MyImageFolder(root_dir="data/")
-    loader = DataLoader(
-        dataset,
-        batch_size=config.BATCH_SIZE,
-        shuffle=True,
-        pin_memory=True,
-        num_workers=config.NUM_WORKERS,
-    )
+    # dataset = MyImageFolder(root_dir="data/")
+    # loader = DataLoader(
+    #     dataset,
+    #     batch_size=config.BATCH_SIZE,
+    #     shuffle=True,
+    #     pin_memory=True,
+    #     num_workers=config.NUM_WORKERS,
+    # )
     gen = Generator(in_channels=3).to(config.DEVICE)
     disc = Discriminator(in_channels=3).to(config.DEVICE)
     initialize_weights(gen)
@@ -106,12 +106,12 @@ def main():
             opt_gen,
             config.LEARNING_RATE,
         )
-        load_checkpoint(
-            config.CHECKPOINT_DISC,
-            disc,
-            opt_disc,
-            config.LEARNING_RATE,
-        )
+        # load_checkpoint(
+        #     config.CHECKPOINT_DISC,
+        #     disc,
+        #     opt_disc,
+        #     config.LEARNING_RATE,
+        # )
 
 
     for epoch in range(config.NUM_EPOCHS):
