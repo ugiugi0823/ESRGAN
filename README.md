@@ -9,7 +9,6 @@ ESRGAN은 쌍입방 보간법과 같은 이전의 초고해상도 방법보다 �
 
 
 
-# ESRGAN-PyTorch
 
 ## Overview
 
